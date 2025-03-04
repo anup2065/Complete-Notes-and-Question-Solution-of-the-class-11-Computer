@@ -1,0 +1,176 @@
+<html>
+<head>
+    <title>Programming Fundamentals</title>
+    <link rel="stylesheet" href="sub.css">
+</head>
+<body>
+
+    <h1>Programming Fundamentals</h1>
+
+    <h2>1. Software & Programs</h2>
+    <p><strong>Program:</strong> Set of instructions written in a programming language.</p>
+    <p><strong>Software:</strong> Collection of integrated programs performing specific tasks.</p>
+    <p><strong>Language Translators:</strong> Convert code to machine language (assembler, compiler, interpreter).</p>
+
+    <h3>Qualities of Good Programs</h3>
+    <ul>
+        <li>Readable and understandable.</li>
+        <li>Error-free and reliable.</li>
+        <li>Portable and flexible.</li>
+        <li>User-friendly interface.</li>
+    </ul>
+
+    <h2>2. Programming Languages</h2>
+    
+    <h3>Low-Level Languages</h3>
+    <p><strong>Machine Language (1GL):</strong> Binary code (0s/1s).</p>
+    <ul>
+        <li><strong>Advantages:</strong> Fast execution, no translator.</li>
+        <li><strong>Disadvantages:</strong> Machine-dependent, hard to debug.</li>
+    </ul>
+
+    <p><strong>Assembly Language (2GL):</strong> Uses mnemonics (e.g., ADD, SUB).</p>
+    <ul>
+        <li>Requires an assembler.</li>
+        <li><strong>Advantages:</strong> Faster than high-level languages.</li>
+        <li><strong>Disadvantages:</strong> Machine-dependent, complex syntax.</li>
+    </ul>
+
+    <h3>High-Level Languages</h3>
+    <p><strong>Procedural (3GL):</strong> Focuses on procedures (e.g., C, FORTRAN).</p>
+    <p><strong>Object-Oriented (4GL):</strong> Focuses on data (e.g., C++, Java).</p>
+    <p><strong>Natural Language (5GL):</strong> Human-like syntax (e.g., PROLOG).</p>
+
+    <h2>3. Language Translators</h2>
+    <table border="1">
+        <tr>
+            <th>Translator</th>
+            <th>Function</th>
+            <th>Examples</th>
+        </tr>
+        <tr>
+            <td>Assembler</td>
+            <td>Converts assembly to machine code.</td>
+            <td>NASM</td>
+        </tr>
+        <tr>
+            <td>Compiler</td>
+            <td>Translates entire code at once.</td>
+            <td>C, C++, Java</td>
+        </tr>
+        <tr>
+            <td>Interpreter</td>
+            <td>Translates line-by-line.</td>
+            <td>Python, PHP, BASIC</td>
+        </tr>
+    </table>
+
+    <h2>4. Program Design Tools</h2>
+    
+    <h3>Algorithm</h3>
+    <p>Step-by-step problem-solving procedure.</p>
+    <pre>
+Step 1: Start  
+Step 2: Read P, T, R  
+Step 3: Calculate I = (P*T*R)/100  
+Step 4: Display I  
+Step 5: Stop  
+    </pre>
+
+    <h3>Flowchart</h3>
+    <p>Visual representation using symbols:</p>
+    <ul>
+        <li>Oval: Start/End</li>
+        <li>Rectangle: Process</li>
+        <li>Diamond: Decision</li>
+        <li>Parallelogram: Input/Output</li>
+    </ul>
+
+    <h2>5. C Programming Language</h2>
+
+    <h3>Features</h3>
+    <ul>
+        <li>Middle-level language (supports low/high-level features).</li>
+        <li>Structured, portable, efficient for system programming.</li>
+        <li>Rich library functions (e.g., printf(), scanf()).</li>
+    </ul>
+
+    <h3>Basic Structure</h3>
+    <pre>
+#include &lt;stdio.h&gt; 
+void main() {      
+  // Code
+}
+    </pre>
+
+    <h3>Data Types</h3>
+    <ul>
+        <li><strong>int:</strong> Integer (2 bytes).</li>
+        <li><strong>float:</strong> Decimal (4 bytes).</li>
+        <li><strong>char:</strong> Single character (1 byte).</li>
+        <li><strong>void:</strong> No value.</li>
+    </ul>
+
+    <h2>6. Common Programs</h2>
+
+    <h3>Sum of Two Numbers</h3>
+    <pre>
+#include &lt;stdio.h&gt;
+void main() {
+  int a, b, s;
+  scanf("%d %d", &a, &b);
+  s = a + b;
+  printf("Sum: %d", s);
+}
+    </pre>
+
+    <h3>Check Palindrome Number</h3>
+    <pre>
+int n, rev = 0, original;
+scanf("%d", &n);
+original = n;
+while (n != 0) {
+  rev = rev * 10 + n % 10;
+  n /= 10;
+}
+if (original == rev) printf("Palindrome");
+    </pre>
+
+    <h2>7. Key Terms</h2>
+    <ul>
+        <li><strong>Syntax:</strong> Rules for writing code.</li>
+        <li><strong>Semantics:</strong> Meaning of code.</li>
+        <li><strong>Errors:</strong></li>
+        <ul>
+            <li><strong>Syntax:</strong> Incorrect code structure.</li>
+            <li><strong>Logical:</strong> Flawed logic.</li>
+            <li><strong>Runtime:</strong> Errors during execution (e.g., division by zero).</li>
+        </ul>
+    </ul>
+
+    <h2>8. String Functions</h2>
+    <table border="1">
+        <tr>
+            <th>Function</th>
+            <th>Use</th>
+        </tr>
+        <tr>
+            <td>strlen()</td>
+            <td>Returns string length.</td>
+        </tr>
+        <tr>
+            <td>strrev()</td>
+            <td>Reverses a string.</td>
+        </tr>
+        <tr>
+            <td>strcat()</td>
+            <td>Concatenates two strings.</td>
+        </tr>
+        <tr>
+            <td>strcmp()</td>
+            <td>Compares two strings.</td>
+        </tr>
+    </table>
+
+</body>
+</html>
