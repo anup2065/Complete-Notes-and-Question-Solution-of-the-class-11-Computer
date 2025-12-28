@@ -1351,22 +1351,52 @@ int main() {
     <p>This is a paragraph.</p>
     <h1>This is a heading</h1>
 
-    <h2>17. What are the different form elements in HTML?</h2>
-    <form>
-        <label for="text">Text Input:</label>
-        <input type="text" id="text"><br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password"><br><br>
-        <label for="radio">Radio Button:</label>
-        <input type="radio" id="radio"><br><br>
-        <label for="checkbox">Checkbox:</label>
-        <input type="checkbox" id="checkbox"><br><br>
-        <label for="textarea">Textarea:</label>
-        <textarea id="textarea"></textarea><br><br>
-        <button type="submit">Submit</button>
-    </form>
+    <section style="font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; color: #333;">
+    <h2 style="color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px;">
+        17. What are the different form elements in HTML?
+    </h2>
 
-    <br><br><br>
+    <div style="margin-bottom: 20px; line-height: 1.6;">
+        <p>HTML form elements are used to collect user input. The most common elements include:</p>
+        <ul>
+            <li><strong>Text Input:</strong> A single-line field for general text.</li>
+            <li><strong>Password:</strong> A field that masks characters for privacy.</li>
+            <li><strong>Radio Buttons:</strong> Used for selecting one option from a set.</li>
+            <li><strong>Checkboxes:</strong> Used for selecting one or more options.</li>
+            <li><strong>Textarea:</strong> A multi-line input for longer text/comments.</li>
+            <li><strong>Submit Button:</strong> Sends the form data to a server.</li>
+        </ul>
+    </div>
+
+    
+
+    <div style="background-color: #f4f7f6; padding: 25px; border-radius: 8px; border: 1px solid #ddd;">
+        <h4 style="margin-top: 0;">Live Form Example:</h4>
+        
+        <form>
+            <label for="text" style="display:block; margin-bottom: 5px; font-weight: bold;">Text Input:</label>
+            <input type="text" id="text" style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
+
+            <label for="password" style="display:block; margin-bottom: 5px; font-weight: bold;">Password:</label>
+            <input type="password" id="password" style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
+
+            <label style="display:block; margin-bottom: 5px; font-weight: bold;">Radio Button:</label>
+            <input type="radio" id="radio_opt" name="grp1"> <label for="radio_opt">Option 1</label>
+            <br><br>
+
+            <label style="display:block; margin-bottom: 5px; font-weight: bold;">Checkbox:</label>
+            <input type="checkbox" id="check_opt"> <label for="check_opt">Enable feature</label>
+            <br><br>
+
+            <label for="textarea" style="display:block; margin-bottom: 5px; font-weight: bold;">Textarea:</label>
+            <textarea id="textarea" style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; height: 80px;"></textarea>
+
+            <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+                Submit
+            </button>
+        </form>
+    </div>
+</section>
 
     <h1>Multimedia Basics</h1>
 
